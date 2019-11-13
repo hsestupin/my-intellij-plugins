@@ -19,6 +19,7 @@ dependencies {
 intellij {
     version '2019.1'
     pluginName 'my_intellij_toolchain'
+    updateSinceUntilBuild = false
 }
 
 patchPluginXml {
