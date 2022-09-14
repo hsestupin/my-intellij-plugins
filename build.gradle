@@ -1,6 +1,6 @@
 plugins {
-    id 'org.jetbrains.intellij' version '0.3.12'
-    id "org.jetbrains.kotlin.jvm" version "1.2.50"
+    id 'org.jetbrains.intellij' version '1.9.0'
+    id "org.jetbrains.kotlin.jvm" version "1.7.20-RC"
 }
 
 group = "io.github.hsestupin"
@@ -13,16 +13,16 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
 }
 
 intellij {
-    version '2019.1'
-    pluginName 'my_intellij_toolchain'
+    version = '2022.2.1'
+//    pluginName 'my_intellij_toolchain'
     updateSinceUntilBuild = false
 }
 
 patchPluginXml {
-    changeNotes """
-      My intellij plugins toolchain"""
+//    changeNotes """
+//      My intellij plugins toolchain"""
 }
