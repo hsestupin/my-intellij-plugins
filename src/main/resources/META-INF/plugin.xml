@@ -1,6 +1,6 @@
 <idea-plugin>
   <id>hsestupin.my-intellij-plugins</id>
-  <name>My intellij plugins toolchain</name>
+  <name>My Intellij Plugins Toolchain</name>
   <vendor email="stupin.sergey@gmail.com" url="io.github.hsestupin">JetBrains</vendor>
 
   <description><![CDATA[
@@ -20,9 +20,12 @@
   <actions>
 
     <action class="io.github.hsestupin.GotoMavenModuleAction" id="io.github.hsestupin.GotoMavenModuleAction"
-            text="Goto maven build file"/>
+            text="Goto Maven Build File"/>
 
     <action class="io.github.hsestupin.GotoBazelBuildAction" id="io.github.hsestupin.GotoBazelBuildAction"
-            text="Goto bazel build file"/>
+            text="Goto Bazel Build File"/>
+
+    <action class="io.github.hsestupin.GotoGradleModuleAction" id="io.github.hsestupin.GotoGradleModuleAction"
+            text="Goto Gradle Build File"/>
   </actions>
 </idea-plugin>
